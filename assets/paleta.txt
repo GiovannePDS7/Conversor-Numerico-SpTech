@@ -1,0 +1,7 @@
+Primária: #922c40;
+Secundária: #dc9750;
+
+Padrão:
+
+#f3eac0;
+#1e2640;

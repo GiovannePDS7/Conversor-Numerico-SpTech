@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background: #f3eac0 !important;
+}
+#container-calculo{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+header{
+    height: 15vh;
+    background: linear-gradient(90deg, 
+  rgba(146, 44, 64, 1),
+  #000 27.5%, 
+  #000 72.5%,
+  rgba(220, 151, 80, 1) 100% 
+);
+
+    width: 100%;
+    margin-bottom: 3%;
+    box-shadow: 1px 8px 12px -6px rgba(0,0,0,0.66);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-header{
+    height: 150%;
+    margin-left: 2.3vw;
+}
+
+.calc-box{
+    width: 50%;
+    height: 100%;
+}
+
+.h2-title{
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+textarea:focus, #input-num:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+#input-num:focus{
+    background: #b87c40;
+}
+#input-num{
+    background: #dc9750;
+    transition: 0.3s;
+    height: 2.5vw;
+    border-radius: 0;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#btn-input{
+    color: #f3eac0;
+    background: #922c40;
+    border: none;
+    width: 8vw;
+    height: 2.5vw;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.3s ease-in;
+}
+
+#btn-input:hover{
+    background: #691f2d;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border: 1px solid #000;
+}
