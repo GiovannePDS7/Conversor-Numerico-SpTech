@@ -1,86 +1,98 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+
 }
 
-body{
-    background: #f3eac0 !important;
-}
-#container-calculo{
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-}
-
-header{
-    height: 15vh;
-    background: linear-gradient(90deg, 
-  rgba(146, 44, 64, 1),
-  #000 27.5%, 
-  #000 72.5%,
-  rgba(220, 151, 80, 1) 100% 
-);
-
-    width: 100%;
-    margin-bottom: 3%;
-    box-shadow: 1px 8px 12px -6px rgba(0,0,0,0.66);
+#principal {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../assets/fundo_principal.png');
+    background-size: 100% 100%;
     overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-#logo-header{
-    height: 150%;
-    margin-left: 2.3vw;
-}
-
-.calc-box{
+.containerPrincipal {
     width: 50%;
     height: 100%;
 }
 
-.h2-title{
-    font-size: 1.7vw;
+.containerPrincipal:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#img-principal {
+    width: 32vw;
+}
+
+.subContainerLeftPrincipal {
+    height: 50%;
+    width: 100%;
+}
+
+.subContainerLeftPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subContainerLeftPrincipal:nth-child(2) {
+    flex-direction: column;
+}
+
+#containerNome {
+    height: 85%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 8vw;
+}
+
+#h1Nome {
+    font-size: 12.5vw;
+    color: #922c40;
+    line-height: 6vw;
+}
+
+#h2Nome {
+    font-size: 7.2vw;
+    color: #dc9750;
+    margin-left: 13.8vw;
+}
+
+#spanDescricao {
     text-align: center;
+    font-size: 1.45vw;
 }
 
-textarea:focus, #input-num:focus, select:focus {
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-}
-#input-num:focus{
-    background: #b87c40;
-}
-#input-num{
-    background: #dc9750;
-    transition: 0.3s;
-    height: 2.5vw;
-    border-radius: 0;
+#btnComecar {
+    margin-top: 3vw;
     border: none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-#btn-input{
-    color: #f3eac0;
     background: #922c40;
-    border: none;
-    width: 8vw;
-    height: 2.5vw;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: 0.3s ease-in;
+    color: #fff;
+    width: 17vw;
+    height: 3vw;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.5vw;
+    transition: 1s;
 }
 
-#btn-input:hover{
-    background: #691f2d;
-    border-top-right-radius: 14px;
-    border-bottom-right-radius: 14px;
+#btnComecar:hover {
+    transition: transform 0.10s ease;
+    background: #641b2a;
+    border: 1px solid #000;
+}
+
+#btnComecar:active {
+    transform: scale(0.95);
+    background: #c48443;
     border: 1px solid #000;
 }
