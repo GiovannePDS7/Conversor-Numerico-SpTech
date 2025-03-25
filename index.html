@@ -59,31 +59,31 @@
           <div id="container-selectConverter" class="containerSelect">
             <div class="subContainer-select">
               <label class="label">Da base:</label>
-              <select id="daBase-Converter" class="selectBase">
-                <option value="Binaria">Binária</option>
-                <option value="Octal">Octal</option>
-                <option value="Decimal">Decimal</option>
-                <option value="Hexadecimal">Hexadecimal</option>
+              <select id="BaseOrigem" class="selectBase">
+                <option value="2">Binária</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
               </select>
             </div>
             <div class="subContainer-select">
               <label class='label'>Para base:</label>
-              <select id="paraBase" class="selectBase">
-                <option value="Binaria">Binária</option>
-                <option value="Octal">Octal</option>
-                <option value="Decimal">Decimal</option>
-                <option value="Hexadecimal">Hexadecimal</option>
+              <select id="BaseFinal" class="selectBase">
+                <option value="2">Binária</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
               </select>
             </div>
           </div>
           <div id="container-InputConverter">
             <div id="subContainer-InputConverter">
               <label class='label'>Digite um número:</label>
-              <input id="Num-Converter" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+              <input id="NumInicial" class="Input-Num" type="text" placeholder="Ex: 54">
             </div>
-            <span class="label Resultado" id="Resultado-Conversor">Resultado:<br>xxxx</span>
+            <span class="label Resultado" id="resultConversor">Resultado:<br></span>
           </div>
-          <button id="btnConverter">Converter</button>
+          <button id="btnConverter" onclick="converter()">Converter</button>
         </form>
       </div>
 

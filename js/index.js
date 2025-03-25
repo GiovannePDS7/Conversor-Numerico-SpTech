@@ -1,9 +1,9 @@
 function converter() {
-    var decimal = Number(demo1.value);
-
-    demo2.innerHTML = decimal.toString(8);
-    demo3.innerHTML = decimal.toString(16);
-    demo4.innerHTML = decimal.toString(2);
+    var NumInicial=document.getElementById("NumInicial").value;
+    var BaseOrigem=Number(document.getElementById("BaseOrigem").value);
+    var BaseFinal=Number(document.getElementById("BaseFinal").value);
+    var NumResult= (parseInt(NumInicial, BaseOrigem)).toString(BaseFinal);
+    resultConversor.innerHTML=`Resultado:<br>${NumResult}`
 }
 
 const MConverter = document.getElementById("MainConverter");
