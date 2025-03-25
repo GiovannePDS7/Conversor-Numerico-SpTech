@@ -1,1 +1,0 @@
-# Conversor-Numerico-SpTech
