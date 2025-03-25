@@ -72,7 +72,7 @@
     font-size: 1.45vw;
 }
 
-#btnComecar {
+#btnComecar, #btnConverter, #btnMultiplicar, #btnDividir, #btnSomar, #btnSubtrair {
     margin-top: 3vw;
     border: none;
     background: #922c40;
@@ -85,14 +85,158 @@
     transition: 1s;
 }
 
-#btnComecar:hover {
+#btnComecar:hover, #btnConverter:hover, #btnMultiplicar:hover, #btnDividir:hover, #btnSomar:hover, #btnSubtrair:hover {
     transition: transform 0.10s ease;
     background: #641b2a;
     border: 1px solid #000;
 }
 
-#btnComecar:active {
+#btnComecar:active, #btnConverter:active, #btnMultiplicar:active, #btnDividir:active, #btnSomar:active, #btnSubtrair:active {
     transform: scale(0.95);
     background: #c48443;
     border: 1px solid #000;
+}
+
+#conteudo {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/fundo_conteudo.png');
+    background-size: 100% 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.containerMain {
+    height: 100%;
+}
+
+.containerMain:nth-child(1) {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-conteudo {
+    width: 32vw;
+}
+
+.containerMain:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.containerMain:nth-child(3) {
+
+    width: 10%;
+}
+
+.h2-text {
+    margin-bottom: 10%;
+    font-size: 3.5vw;
+    text-align: center;
+    color: #922c40;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#container-selectConverter {
+    height: 22vh;
+}
+
+.containerSelect {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.subContainer-select {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label {
+    font-size: 1.35vw;
+}
+
+.selectBase {
+    margin-left: 2vw;
+    height: 3vw;
+    border: 1px solid #000;
+    background: #ecc093;
+    border-radius: 10px;
+    font-size: 1.15vw;
+}
+
+#subContainer-InputConverter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#container-InputConverter {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.Input-Num {
+    width: 100%;
+    height: 6.5vh;
+    background: #ecc093;
+    border-radius: 10px;
+    border: 1px solid #000;
+    color: #000;
+    padding-left: 0.6vw;
+    font-size: 1.2vw;
+}
+
+.Resultado {
+    margin-top: 3vw;
+    text-align: center;
+}
+
+#btnConverter, #btnMultiplicar {
+    margin-top: 4vw;
+    font-size: 1.3vw;
+}
+
+#container-selectMultiplicar {
+    height: 10vh;
+}
+
+.btnMenu {
+    border: 1px solid #000;
+    margin: 0.5vw;
+    width: 5vw;
+    height: 4.5vw;
+    border-radius: 25px;
+    background: #922c40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnMenu:hover {
+    background: #6d202f;
+}
+
+.imgMenu {
+    width: 5vw;
 }

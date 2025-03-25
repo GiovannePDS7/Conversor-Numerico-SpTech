@@ -37,11 +37,195 @@
           Uma ferramenta inteligente para conversão <br>
           e cálculos de bases numéricas
         </span>
-        <button id="btnComecar">Começar</button>
+        <a href="#conteudo"><button id="btnComecar">Começar</button></a>
       </div>
     </div>
     <div class="containerPrincipal">
       <img src="./assets/robo_principal.png" class="img-fluid" id="img-principal" alt="">
+    </div>
+  </section>
+
+
+  <section id="conteudo">
+    <div class="containerMain">
+      <img src="./assets/robo_conteudo.png" class="img-fluid" id="img-conteudo" alt="">
+    </div>
+    <div class="containerMain">
+
+      <!--Converter-->
+      <div id="MainConverter" class="">
+        <form class="form">
+          <h2 class="h2-text">Converter</h2>
+          <div id="container-selectConverter" class="containerSelect">
+            <div class="subContainer-select">
+              <label class="label">Da base:</label>
+              <select id="daBase-Converter" class="selectBase">
+                <option value="Binaria">Binária</option>
+                <option value="Octal">Octal</option>
+                <option value="Decimal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+              </select>
+            </div>
+            <div class="subContainer-select">
+              <label class='label'>Para base:</label>
+              <select id="paraBase" class="selectBase">
+                <option value="Binaria">Binária</option>
+                <option value="Octal">Octal</option>
+                <option value="Decimal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+              </select>
+            </div>
+          </div>
+          <div id="container-InputConverter">
+            <div id="subContainer-InputConverter">
+              <label class='label'>Digite um número:</label>
+              <input id="Num-Converter" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+            </div>
+            <span class="label Resultado" id="Resultado-Conversor">Resultado:<br>xxxx</span>
+          </div>
+          <button id="btnConverter">Converter</button>
+        </form>
+      </div>
+
+
+
+
+      <!--Multiplicar-->
+      <div id="MainMultiplicar" class="d-none">
+        <form class="form">
+          <h2 class="h2-text">Multiplicar</h2>
+          <div class="containerSelect">
+            <div class="subContainer-select">
+              <label class="label">Escolha a base:</label>
+              <select id="base-Multiplicar" class="selectBase">
+                <option value="Binaria">Binária</option>
+                <option value="Octal">Octal</option>
+                <option value="Decimal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+              </select>
+            </div>
+          </div>
+          <div id="container-InputConverter">
+            <div id="subContainer-InputConverter" class="mt-3">
+
+              <label class='label'>Digite o número 1:</label>
+              <input id="Num1-Multiplicar" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+
+              <label class='label mt-3'>Digite o número 2:</label>
+              <input id="Num2-Multiplicar" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+            </div>
+            <span class="label Resultado" id="Resultado-Multiplicar">Resultado:<br>xxxx</span>
+          </div>
+          <button id="btnMultiplicar">Multiplicar</button>
+        </form>
+      </div>
+
+
+
+
+
+      <!--Dividir-->
+      <div id="MainDividir" class="d-none">
+        <form class="form">
+          <h2 class="h2-text">Dividir</h2>
+          <div class="containerSelect">
+            <div class="subContainer-select">
+              <label class="label">Escolha a base:</label>
+              <select id="base-Dividir" class="selectBase">
+                <option value="Binaria">Binária</option>
+                <option value="Octal">Octal</option>
+                <option value="Decimal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+              </select>
+            </div>
+          </div>
+          <div id="container-InputConverter">
+            <div id="subContainer-InputConverter" class="mt-3">
+
+              <label class='label'>Digite o número 1:</label>
+              <input id="Num1-Dividir" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+
+              <label class='label mt-3'>Digite o número 2:</label>
+              <input id="Num2-Dividir" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+            </div>
+            <span class="label Resultado" id="Resultado-Dividir">Resultado:<br>xxxx</span>
+          </div>
+          <button id="btnDividir">Dividir</button>
+        </form>
+      </div>
+
+      <!--Somar-->
+      <div id="MainSomar" class="d-none">
+        <form class="form">
+          <h2 class="h2-text">Somar</h2>
+          <div class="containerSelect">
+            <div class="subContainer-select">
+              <label class="label">Escolha a base:</label>
+              <select id="base-Somar" class="selectBase">
+                <option value="Binaria">Binária</option>
+                <option value="Octal">Octal</option>
+                <option value="Decimal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+              </select>
+            </div>
+          </div>
+          <div id="container-InputConverter">
+            <div id="subContainer-InputConverter" class="mt-3">
+
+              <label class='label'>Digite o número 1:</label>
+              <input id="Num1-Somar" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+
+              <label class='label mt-3'>Digite o número 2:</label>
+              <input id="Num2-Somar" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+            </div>
+            <span class="label Resultado" id="Resultado-Somar">Resultado:<br>xxxx</span>
+          </div>
+          <button id="btnSomar">Somar</button>
+        </form>
+      </div>
+
+      <!--Subtrair-->
+      <div id="MainSubtrair" class="d-none">
+        <form class="form">
+          <h2 class="h2-text">Subtrair</h2>
+          <div class="containerSelect">
+            <div class="subContainer-select">
+              <label class="label">Escolha a base:</label>
+              <select id="base-Subtrair" class="selectBase">
+                <option value="Binaria">Binária</option>
+                <option value="Octal">Octal</option>
+                <option value="Decimal">Octal</option>
+                <option value="Hexadecimal">Hexadecimal</option>
+              </select>
+            </div>
+          </div>
+          <div id="container-InputConverter">
+            <div id="subContainer-InputConverter" class="mt-3">
+
+              <label class='label'>Digite o número 1:</label>
+              <input id="Num1-Subtrair" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+
+              <label class='label mt-3'>Digite o número 2:</label>
+              <input id="Num2-Subtrair" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+            </div>
+            <span class="label Resultado" id="Resultado-Subtrair">Resultado:<br>xxxx</span>
+          </div>
+          <button id="btnSubtrair">Subtrair</button>
+        </form>
+      </div>
+
+    </div>
+    <div class="containerMain d-flex align-items-center justify-content-center flex-column">
+      <button class="btnMenu" onclick="ExibirConverter()"><img class="imgMenu img-fluid"
+          src="./assets/ConverterIcon.png" alt=""></button>
+      <button class="btnMenu" onclick="ExibirMultiplicacao()"><img class="imgMenu img-fluid"
+          src="./assets/MultiplicacaoIcon.png" alt=""></button>
+      <button class="btnMenu" onclick="ExibirDividir()"><img class="imgMenu img-fluid" src="./assets/DividirIcon.png"
+          alt=""></button>
+      <button class="btnMenu" onclick="ExibirSomar()"><img class="imgMenu img-fluid" src="./assets/SomarIcon.png"
+          alt=""></button>
+      <button class="btnMenu" onclick="ExibirSubtracao()"><img class="imgMenu img-fluid"
+          src="./assets/SubtracaoIcon.png" alt=""></button>
     </div>
   </section>
 
