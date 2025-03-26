@@ -81,7 +81,7 @@
               <label class='label'>Digite um número:</label>
               <input id="NumInicial" class="Input-Num" type="text" placeholder="Ex: 54">
             </div>
-            <span class="label Resultado" id="resultConversor">Resultado:<br></span>
+            <span class="label Resultado" id="resultConversor"></span>
           </div>
           <button id="btnConverter" onclick="converter()">Converter</button>
         </form>
@@ -97,11 +97,11 @@
           <div class="containerSelect">
             <div class="subContainer-select">
               <label class="label">Escolha a base:</label>
-              <select id="base-Multiplicar" class="selectBase">
-                <option value="Binaria">Binária</option>
-                <option value="Octal">Octal</option>
-                <option value="Decimal">Decimal</option>
-                <option value="Hexadecimal">Hexadecimal</option>
+              <select id="BaseMultiplicar" class="selectBase">
+                <option value="2">Binária</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
               </select>
             </div>
           </div>
@@ -109,14 +109,14 @@
             <div id="subContainer-InputConverter" class="mt-3">
 
               <label class='label'>Digite o número 1:</label>
-              <input id="Num1-Multiplicar" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+              <input id="Num1Multiplicar" class="Input-Num" type="text" placeholder="Ex: 54">
 
               <label class='label mt-3'>Digite o número 2:</label>
-              <input id="Num2-Multiplicar" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+              <input id="Num2Multiplicar" class="Input-Num" type="text" placeholder="Ex: 54">
             </div>
-            <span class="label Resultado" id="Resultado-Multiplicar">Resultado:<br>xxxx</span>
+            <span class="label Resultado" id="ResultadoMultiplicar"></span>
           </div>
-          <button id="btnMultiplicar">Multiplicar</button>
+          <button id="btnMultiplicar" onclick="multiplicar()">Multiplicar</button>
         </form>
       </div>
 
@@ -131,11 +131,11 @@
           <div class="containerSelect">
             <div class="subContainer-select">
               <label class="label">Escolha a base:</label>
-              <select id="base-Dividir" class="selectBase">
-                <option value="Binaria">Binária</option>
-                <option value="Octal">Octal</option>
-                <option value="Decimal">Decimal</option>
-                <option value="Hexadecimal">Hexadecimal</option>
+              <select id="BaseDividir" class="selectBase">
+                <option value="2">Binária</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
               </select>
             </div>
           </div>
@@ -143,14 +143,14 @@
             <div id="subContainer-InputConverter" class="mt-3">
 
               <label class='label'>Digite o número 1:</label>
-              <input id="Num1-Dividir" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+              <input id="Num1Dividir" class="Input-Num" type="text" placeholder="Ex: 54">
 
               <label class='label mt-3'>Digite o número 2:</label>
-              <input id="Num2-Dividir" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+              <input id="Num2Dividir" class="Input-Num" type="text" placeholder="Ex: 54">
             </div>
-            <span class="label Resultado" id="Resultado-Dividir">Resultado:<br>xxxx</span>
+            <span class="label Resultado" id="ResultadoDividir"></span>
           </div>
-          <button id="btnDividir">Dividir</button>
+          <button id="btnDividir" onclick="dividir()">Dividir</button>
         </form>
       </div>
 
@@ -161,11 +161,11 @@
           <div class="containerSelect">
             <div class="subContainer-select">
               <label class="label">Escolha a base:</label>
-              <select id="base-Somar" class="selectBase">
-                <option value="Binaria">Binária</option>
-                <option value="Octal">Octal</option>
-                <option value="Decimal">Decimal</option>
-                <option value="Hexadecimal">Hexadecimal</option>
+              <select id="BaseSomar" class="selectBase">
+                <option value="2">Binária</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
               </select>
             </div>
           </div>
@@ -173,14 +173,14 @@
             <div id="subContainer-InputConverter" class="mt-3">
 
               <label class='label'>Digite o número 1:</label>
-              <input id="Num1-Somar" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+              <input id="Num1Somar" class="Input-Num" type="text" placeholder="Ex: 54">
 
               <label class='label mt-3'>Digite o número 2:</label>
-              <input id="Num2-Somar" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+              <input id="Num2Somar" class="Input-Num" type="text" placeholder="Ex: 54">
             </div>
-            <span class="label Resultado" id="Resultado-Somar">Resultado:<br>xxxx</span>
+            <span class="label Resultado" id="ResultadoSomar"></span>
           </div>
-          <button id="btnSomar">Somar</button>
+          <button id="btnSomar" onclick="somar()">Somar</button>
         </form>
       </div>
 
@@ -191,11 +191,11 @@
           <div class="containerSelect">
             <div class="subContainer-select">
               <label class="label">Escolha a base:</label>
-              <select id="base-Subtrair" class="selectBase">
-                <option value="Binaria">Binária</option>
-                <option value="Octal">Octal</option>
-                <option value="Decimal">Decimal</option>
-                <option value="Hexadecimal">Hexadecimal</option>
+              <select id="BaseSubtrair" class="selectBase">
+                <option value="2">Binária</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
               </select>
             </div>
           </div>
@@ -203,14 +203,14 @@
             <div id="subContainer-InputConverter" class="mt-3">
 
               <label class='label'>Digite o número 1:</label>
-              <input id="Num1-Subtrair" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+              <input id="Num1Subtrair" class="Input-Num" type="text" placeholder="Ex: 54">
 
               <label class='label mt-3'>Digite o número 2:</label>
-              <input id="Num2-Subtrair" class="Input-Num" type="text" placeholder="Ex: 54" disabled>
+              <input id="Num2Subtrair" class="Input-Num" type="text" placeholder="Ex: 54">
             </div>
-            <span class="label Resultado" id="Resultado-Subtrair">Resultado:<br>xxxx</span>
+            <span class="label Resultado" id="ResultadoSubtrair">Resultado:<br>xxxx</span>
           </div>
-          <button id="btnSubtrair">Subtrair</button>
+          <button id="btnSubtrair" onclick="subtrair()">Subtrair</button>
         </form>
       </div>
 

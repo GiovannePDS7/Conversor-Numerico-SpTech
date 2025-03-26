@@ -6,6 +6,38 @@ function converter() {
     resultConversor.innerHTML=`Resultado:<br>${NumResult}`
 }
 
+function somar() {
+    var baseSoma=Number(document.getElementById("BaseSomar").value);
+    var num1=Number((parseInt(document.getElementById("Num1Somar").value, baseSoma)).toString(10));
+    var num2=Number((parseInt(document.getElementById("Num2Somar").value, baseSoma)).toString(10));
+    var numResult=(num1+num2).toString(baseSoma);
+    ResultadoSomar.innerHTML=`Resultado:<br>${numResult}`
+}
+
+function subtrair() {
+    var baseSubtrair=Number(document.getElementById("BaseSubtrair").value);
+    var num1=Number((parseInt(document.getElementById("Num1Subtrair").value, baseSubtrair)).toString(10));
+    var num2=Number((parseInt(document.getElementById("Num2Subtrair").value, baseSubtrair)).toString(10));
+    var numResult=(num1-num2).toString(baseSubtrair);
+    ResultadoSubtrair.innerHTML=`Resultado:<br>${numResult}`
+}
+
+function dividir() {
+    var baseDividir=Number(document.getElementById("BaseDividir").value);
+    var num1=Number((parseInt(document.getElementById("Num1Dividir").value, baseDividir)).toString(10));
+    var num2=Number((parseInt(document.getElementById("Num2Dividir").value, baseDividir)).toString(10));
+    var numResult=(num1/num2).toString(baseDividir);
+    ResultadoDividir.innerHTML=`Resultado:<br>${numResult}`
+}
+
+function multiplicar() {
+    var baseMultiplicar=Number(document.getElementById("BaseMultiplicar").value);
+    var num1=Number((parseInt(document.getElementById("Num1Multiplicar").value, baseMultiplicar)).toString(10));
+    var num2=Number((parseInt(document.getElementById("Num2Multiplicar").value, baseMultiplicar)).toString(10));
+    var numResult=(num1*num2).toString(baseMultiplicar);
+    ResultadoMultiplicar.innerHTML=`Resultado:<br>${numResult}`
+}
+
 const MConverter = document.getElementById("MainConverter");
 const MDividir = document.getElementById("MainDividir");
 const MMultiplicar = document.getElementById("MainMultiplicar");
